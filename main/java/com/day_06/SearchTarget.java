@@ -3,6 +3,7 @@ import java.util.Arrays;
 
 public class SearchTarget {
 
+    // Method for the linear search
      public static int linearSearch(int[] arr, int n) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == n) {
@@ -12,6 +13,7 @@ public class SearchTarget {
         return -1;
     }
 
+    // method for the binary search
      public static int binarySearch(int[] arr, int n) {
         int length = arr.length;
         int low = 0;
@@ -29,6 +31,7 @@ public class SearchTarget {
         return -1;
     }
 
+    // generate the random number data
      public static int[] generateRandomDataSet(int size) {
         int[] dataSet = new int[size];
         for (int i = 0; i < size; i++) {
@@ -37,6 +40,7 @@ public class SearchTarget {
         return dataSet;
     }
 
+    // compare the performance
      public static void comparePerformance(int size, int n) {
         int[] dataset = generateRandomDataSet(size);
 
@@ -61,6 +65,7 @@ public class SearchTarget {
          System.out.println();
     }
 
+    // main method for chec
     public static void main(String[] args) {
         int n = 999;
         comparePerformance(1000, n);
